@@ -58,9 +58,9 @@ pipeline {
             when {
                 branch 'master'
             }
-            /* added this 'environment' block */
+            /* added this 'environment' block & modifed to = 1 was 0 */
             environment { 
-                CANARY_REPLICAS = 0
+                CANARY_REPLICAS = 1
             }
             steps {
                 input 'Deploy to Production?'
